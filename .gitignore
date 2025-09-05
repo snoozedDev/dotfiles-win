@@ -6,7 +6,9 @@
 
 # Explicitly allow specific files and directories
 
-!Documents/AutoHotkey/*.ahk
+!Documents/AutoHotkey/**/*.ahk
+!Documents/PowerShell/**/*.ps1
 !AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/*.ps1
 !/ale.code-workspace
 !/.gitignore
+!/AGENTS.md
