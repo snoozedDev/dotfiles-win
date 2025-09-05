@@ -1,0 +1,10 @@
+# Ignore everything by default
+*
+
+# Allow directories to be traversed (this is important!)
+!*/
+
+# Explicitly allow specific files and directories
+
+!Documents/AutoHotkey/*.ahk
+!/.gitignore
