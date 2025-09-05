@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "Start Up",
+			"path": "./AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup"
+		},
+		{
+			"name": "AutoHotkey",
+			"path": "./Documents/AutoHotkey"
+		},
+		{
+			"name": "Home",
+			"path": "."
+		}
+	],
+}
