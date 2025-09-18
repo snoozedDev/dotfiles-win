@@ -9,8 +9,16 @@
 			"path": "./Documents/PowerShell"
 		},
 		{
+			"name": "Userscripts",
+			"path": "./Documents/Userscripts"
+		},
+		{
 			"name": "AutoHotkey",
 			"path": "./Documents/AutoHotkey"
+		},
+		{
+			"name": "NodeJS",
+			"path": "./Documents/NodeJS"
 		},
 	],
 	"settings": {

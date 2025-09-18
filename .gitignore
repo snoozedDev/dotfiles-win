@@ -8,6 +8,7 @@
 
 !Documents/AutoHotkey/**/*.ahk
 !Documents/PowerShell/**/*.ps1
+!Documents/Userscripts/**/*.user.js
 !AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/*.ps1
 !/ale.code-workspace
 !/.gitignore

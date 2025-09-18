@@ -1,13 +1,23 @@
 ﻿#Requires AutoHotkey v2.0
 #SingleInstance Force
-; Alt+E for special spanish characters
+; Alt+E for vowels with accents, Alt+N for ñ
+
+; Set custom tray icon - keyboard/language icon
+TraySetIcon("shell32.dll", 174) ; Keyboard icon
 
 global AccentMode := false
+global EnneMode := false
 
-!e:: { ; Alt+E
+!e:: { ; Alt+E for vowels
     global AccentMode := true
     ; activate for 3s
     SetTimer(() => AccentMode := false, -3000)
+}
+
+!n:: { ; Alt+N for ñ
+    global EnneMode := true
+    ; activate for 3s
+    SetTimer(() => EnneMode := false, -3000)
 }
 
 #HotIf AccentMode
@@ -31,10 +41,6 @@ global AccentMode := false
     global AccentMode := false
     Send("ú")
 }
-*n:: {
-    global AccentMode := false
-    Send("ñ")
-}
 +a:: {
     global AccentMode := false
     Send("Á")
@@ -55,8 +61,15 @@ global AccentMode := false
     global AccentMode := false
     Send("Ú")
 }
+#HotIf
+
+#HotIf EnneMode
+*n:: {
+    global EnneMode := false
+    Send("ñ")
+}
 +n:: {
-    global AccentMode := false
+    global EnneMode := false
     Send("Ñ")
 }
 #HotIf
